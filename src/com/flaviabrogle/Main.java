@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        int max = 120;
+        int max = 100000;
         if (args.length > 0) {
             try {
                 max = Integer.parseInt(args[0]);
@@ -30,7 +30,7 @@ public class Main {
             if (!marked[i-offset]) {
                 primes.add(i);
                 int x = i * i;
-                while (x < max) {
+                while (x < max && x > 0) {
                     marked[x-offset] = true;
                     x += i;
                 }
