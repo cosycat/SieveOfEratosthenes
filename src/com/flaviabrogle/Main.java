@@ -16,8 +16,7 @@ public class Main {
         }
         System.out.println("Prime Numbers up to " + max + ":");
         for (int i : getPrimeNumbersUpTo(max)) {
-            System.out.print(i);
-            System.out.print(", ");
+            System.out.println(i);
         }
     }
 
